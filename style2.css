@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("peakpx.jpg") no-repeat center center/cover;
+}
+
+.container form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1 {
+    color: #ff6f61;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.container form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #ff6f61;
+    color: #fff;
+}
+
+.container form input::placeholder {
+    color: #ddd;
+}
+
+.container form input#mobile {
+    margin-left: 20px;
+}
+
+.container form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ff6f61;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: calc(100% - 20px);
+    min-height: 80px;
+    margin: 0 10px 20px 10px;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 111, 97, 0.7);
+}
+
+.container form #button {
+    border: none;
+    background: linear-gradient(45deg, #ff6f61, #d47d7d);
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    transition: 0.3s;
+    align-self: flex-end;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.container form #button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
