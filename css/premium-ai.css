@@ -1,0 +1,16 @@
+:root{--bg:#fff;--surface:#f8fafc;--text:#0b1220;--muted:#475569;--primary:#2563eb;--cyan:#06b6d4;--violet:#8b5cf6;--border:#e2e8f0}
+body{background:linear-gradient(180deg,#fff 0%,#f8fafc 100%)!important;color:var(--text)!important;font-family:Inter,system-ui,-apple-system,sans-serif}
+.section-title{color:#0b1220!important;font-weight:800;letter-spacing:-.03em}
+.section-note,.cv-lead{color:var(--muted)!important}
+a{color:var(--primary)!important;transition:.25s ease}a:hover{color:var(--violet)!important}
+.pub-item,.interest-grid li,.award-grid li,.timeline li{background:rgba(255,255,255,.75)!important;border:1px solid var(--border)!important;border-radius:22px!important;padding:24px!important;box-shadow:0 12px 35px rgba(15,23,42,.06);transition:.35s}
+.pub-item:hover,.interest-grid li:hover,.award-grid li:hover,.timeline li:hover{transform:translateY(-6px);box-shadow:0 22px 45px rgba(37,99,235,.12)}
+.btn-cv,.btn-contact{background:linear-gradient(135deg,var(--primary),var(--violet))!important;border:none!important;border-radius:999px!important;color:#fff!important}
+.ai-toggle{position:fixed;right:25px;bottom:25px;z-index:9999;background:#fff;border:1px solid #dbeafe;padding:12px 18px;border-radius:999px;box-shadow:0 10px 30px #0001;font-weight:700;color:#0f172a;cursor:pointer}
+.ai-visual{width:320px;height:320px;position:relative;margin:auto;perspective:900px}
+.ai-core{width:130px;height:130px;border-radius:30px;background:linear-gradient(135deg,#2563eb,#06b6d4,#8b5cf6);position:absolute;left:95px;top:95px;animation:float 5s infinite ease-in-out;box-shadow:0 30px 80px #2563eb55;transform-style:preserve-3d}
+.ai-orbit{position:absolute;inset:35px;border:2px solid #93c5fd;border-radius:50%;animation:spin 12s linear infinite}
+body.mode-3d .ai-core{transform:rotateX(45deg) rotateY(45deg) scale(1.1)}
+body.mode-2d .ai-orbit{opacity:.25}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{translate:0 -18px}}
+@media(max-width:768px){.ai-visual{width:220px;height:220px}.ai-core{left:65px;top:65px;width:90px;height:90px}}
